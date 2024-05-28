@@ -4,6 +4,7 @@ export default function LinkUrl() {
        
            <input name="myInput" placeholder="link from youtube or any other channels"/>
        
+       
       </div>
     )
 }
