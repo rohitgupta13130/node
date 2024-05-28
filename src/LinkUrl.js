@@ -1,9 +1,9 @@
-export default function Url() {
+export default function LinkUrl() {
     return (
-      <>
-        <label>
+      <div>
+       
            <input name="myInput" placeholder="link from youtube or any other channels"/>
-        </label>
-        </>
+       
+      </div>
     )
 }
