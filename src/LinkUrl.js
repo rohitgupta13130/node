@@ -37,8 +37,7 @@ export default function VideoUploadAndLink() {
   return (
     <div className='wrapper'>
       <form className='form-group form' onSubmit={handleYoutubeSubmit}>
-
-      <input
+        <input
           type='text'
           className='form-control'
           placeholder='Enter YouTube URL'
@@ -46,7 +45,7 @@ export default function VideoUploadAndLink() {
           onChange={handleYoutubeChange}
         />
 
-         <button type='submit' className='btn btn-success btn-md'>
+        <button type='submit' className='btn btn-success btn-md'>
           UPLOAD
         </button>
 
@@ -56,12 +55,13 @@ export default function VideoUploadAndLink() {
           accept='video/*'
           onChange={handleFileChange}
         />
-       
       </form>
 
-      <div className=' youtbe-box ' >
-        {videoURL && (
-          <ReactPlayer url={videoURL} className='video' controls style={{backgroundColor:'yellow'}} />
+      <div className='youtube-box' style={{ backgroundColor: 'black', height: '360px', width: '640px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        {videoURL ? (
+          <ReactPlayer url={videoURL} className='video' controls width='100%' height='100%' />
+        ) : (
+          <div style={{ color: 'white', fontSize: '20px' }}>No video selected</div>
         )}
       </div>
     </div>
