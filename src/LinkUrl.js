@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import ReactPlayer from 'react-player';
 
@@ -45,10 +46,8 @@ export default function VideoUploadAndLink() {
           onChange={handleYoutubeChange}
         />
 
-        <button type='submit' className='btn btn-success btn-md'>
-          UPLOAD
-        </button>
-
+        
+        
         <input
           type='file'
           className='form-control'
@@ -59,7 +58,7 @@ export default function VideoUploadAndLink() {
 
       <div className='youtube-box' style={{ backgroundColor: 'black', height: '360px', width: '640px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         {videoURL ? (
-          <ReactPlayer url={videoURL} className='video' controls width='100%' height='100%' />
+          <ReactPlayer url={videoURL}  controls width='100%' height='100%' />
         ) : (
           <div style={{ color: 'white', fontSize: '20px' }}>No video selected</div>
         )}
