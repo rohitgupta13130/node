@@ -4,6 +4,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import LinkUrl from './LinkUrl';
 import Hastag from './Hastag';
+import Hottopics from './Hottopics';
 
 
 
@@ -15,6 +16,7 @@ root.render(
  <div>
     <LinkUrl/>
     <Hastag/>
+    <Hottopics/>
    
     
  
